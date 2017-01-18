@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+body {
+	background-color: #EEE;
+}
+body,div,p,span {margin: 0;}
+h1,h2 {
+	font-family: 'Dancing Script', cursive;
+	margin: 0;
+	font-weight: normal;
+	font-size: 35px;
+}
+.caption {
+	font-size: 18px;
+	margin-top: 20px;
+	text-align: center;
+}
+header {
+	padding: 6px 15px;
+	background-color: rgba(0,0,0,0.8);
+	color: #FFF;
+	font-weight: bold;
+	font-size: 20px;
+}
+.container{
+	list-style: none;
+}
+.container li{
+	width: 256px;
+	height: 256px;
+	margin: 100px auto;
+	padding: 10px;
+	border: 1px solid #DDD;
+	background-color: #FFF;
+	background-image: url("../img/loading.gif");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.container li img{
+	opacity: 0;
+}
