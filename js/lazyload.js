@@ -2,14 +2,14 @@ var A_ARAI = A_ARAI || {};
 A_ARAI.SAMPLE = {};
 
 
-A_ARAI.SAMPLE.LAZYLOAD = {
+A_ARAI.SAMPLE.LazyLoad = {
 	DURATION : 250,
 
 	init: function() {
 		this.bindEvent();
 		this.loadImage();
 	},
-	setParameters : function(){
+	setParameters: function(){
 		this.windowTop = $(window).scrollTop();
 		this.windowHeight = $(window).height();
 		this.windowBottm = this.windowTop + this.windowHeight;
@@ -17,7 +17,7 @@ A_ARAI.SAMPLE.LAZYLOAD = {
 	bindEvent: function() {
 		$(window).on('resize scroll', $.proxy(this.loadImage, this));
 	},
-	loadImage : function(){
+	loadImage: function(){
 		var _self = this;
 		this.setParameters();
 
@@ -36,5 +36,5 @@ A_ARAI.SAMPLE.LAZYLOAD = {
 	}
 };
 $(function(){
-	A_ARAI.SAMPLE.LAZYLOAD.init();
+	A_ARAI.SAMPLE.LazyLoad.init();
 });
